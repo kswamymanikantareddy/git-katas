@@ -1,1 +1,1 @@
-amend this
+git rebase -i <after-this-commit>
