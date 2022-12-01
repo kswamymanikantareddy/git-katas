@@ -1,0 +1,9 @@
+game_numbers = input().split(" ")
+# As it is given in the question that Alice starts the game, assuming that Alice starts and then Bob starts and they select and remove the numbers in sequence then we could say that Alice removes 0,2,4... index elemets and Bob removes 2,3,... elements
+alice = 0
+for i in range(0,len(game_numbers), 2):
+    alice += int(game_numbers[i])
+if alice%2 == 0:
+    print("Alice")
+else:
+    print("Bob")
